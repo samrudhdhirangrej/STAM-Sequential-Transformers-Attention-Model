@@ -21,9 +21,22 @@ An overview of our *Sequential Transformers Attention Model* **(STAM)**. The STA
 * [ImageNet](https://www.image-net.org/)
 * [fMoW](https://github.com/fMoW/dataset) (Download and prepare the dataset following the instructions provided in [PatchDrop](https://github.com/ermongroup/PatchDrop) repository)
 
+## Training
+* Adapt [`paths.py`](./paths.py)
+* Teacher models:
+  - ImageNet: Download weights for *DeiT-small distilled* model from [deit](https://github.com/facebookresearch/deit).
+  - fMoW: Finetune *DeiT-small* model from [deit](https://github.com/facebookresearch/deit) on the fMoW dataset for 100 epochs using the default hyperparameter setting and vertical flip augmentation.
+* Student models (**STAM**):
+  - ImageNet: run [`run_imagenet.sh`](./run_imagenet.sh)
+  - fMoW: run [`run_fmow.sh`](./run_fmow.sh)
+
+## Evaluation
+* ImageNet: run [`eval_imagenet.sh`](./eval_imagenet.sh)
+* fMoW: run [`eval_fmow.sh`](./eval_fmow.sh)
+
 ## Visualization
-![fmow_visualization](./figures/fmow_visualization.png)
 ![imagenet_visualization](./figures/imagenet_visualization.png)
+![fmow_visualization](./figures/fmow_visualization.png)
 Visualization of glimpses selected by STAM on example images from *t=0* to *15*. (top) ImageNet; (bottom) fMoW. Complete images are shown for reference only. STAM does not observe a complete image.
 
 ## Acknowledgement
