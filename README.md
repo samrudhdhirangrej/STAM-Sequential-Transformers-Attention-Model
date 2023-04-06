@@ -1,6 +1,7 @@
 # Consistency driven Sequential Transformers Attention Model for Partially Observable Scenes
 **Authors**: Samrudhdhi Rangrej, Chetan Srinidhi, James Clark
 **Accepted to**: CVPR'22
+[Paper](https://openaccess.thecvf.com/content/CVPR2022/papers/Rangrej_Consistency_Driven_Sequential_Transformers_Attention_Model_for_Partially_Observable_Scenes_CVPR_2022_paper.pdf)
 &nbsp;
 
 &nbsp;
